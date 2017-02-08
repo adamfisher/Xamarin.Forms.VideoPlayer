@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:o="clr-namespace:Octane.Xam.VideoPlayer;assembly=Octane.Xam.VideoPlayer"
+             x:Class="ChillPlayer.Pages.VideoPlayerQueuePage"
+             BackgroundColor="White">
+  
+  <ScrollView>
+    <StackLayout BindingContext="{x:Reference VideoPlayer}" HeightRequest="1000" VerticalOptions="FillAndExpand" Spacing="0">
+
+      <o:VideoPlayer
+        x:Name="VideoPlayer"
+        DisplayControls="False"
+        FillMode="ResizeAspectFill"
+        AutoPlay="True"
+        PlayerStateChanged="VideoPlayer_OnPlayerStateChanged" />
+
+      <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="5">
+        <Image Source="button_seek_backward.png" HeightRequest="48" Aspect="AspectFit">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer Command="{Binding SeekCommand}" CommandParameter ="-3"/>
+          </Image.GestureRecognizers>
+        </Image>
+        <Image x:Name="PlayButton" Source="button_play.png" HeightRequest="48" Aspect="AspectFit">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer Command="{Binding PlayCommand}" />
+          </Image.GestureRecognizers>
+        </Image>
+        <Image x:Name="PauseButton" Source="button_pause.png" IsVisible="False" HeightRequest="48" Aspect="AspectFit">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer Command="{Binding PauseCommand}" />
+          </Image.GestureRecognizers>
+        </Image>
+        <Image Source="button_seek_forward.png" HeightRequest="48" Aspect="AspectFit">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer Command="{Binding SeekCommand}" CommandParameter ="3"/>
+          </Image.GestureRecognizers>
+        </Image>
+      </StackLayout>
+
+      <Grid BackgroundColor="#EEE" ColumnSpacing="0" Padding="10">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="{Binding CurrentTime, StringFormat=\{0:mm\\:ss\}}" FontSize="24" Grid.Row="0" Grid.Column="0" />
+        <Label Text="Time" FontAttributes="Bold" FontSize="10" TextColor="#666" Grid.Row="1" Grid.Column="0" />
+
+        <Label Text="{Binding State}" FontSize="24" Grid.Row="0" Grid.Column="1" />
+        <Label Text="Current State" FontAttributes="Bold" FontSize="10" TextColor="#666" Grid.Row="1" Grid.Column="1" />
+      </Grid>
+
+      <ListView x:Name="Playlist" HasUnevenRows="True" ItemSelected="Playlist_OnItemSelected">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ImageCell ImageSource="{Binding ThumbnailPath}" Text="{Binding Title}" Detail="{Binding Author}" TextColor="Black" DetailColor="Gray" />
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    
+    </StackLayout>
+  
+  </ScrollView>
+
+</ContentPage>

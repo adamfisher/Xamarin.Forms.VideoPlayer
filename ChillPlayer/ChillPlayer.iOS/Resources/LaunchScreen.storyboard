@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+    </dependencies>
+    <scenes>
+        <!--class Prefix:identifier View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="LaunchScreen" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3"/>
+                        <viewControllerLayoutGuide type="bottom" id="4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.7803921568627451" blue="0.62745098039215685" alpha="1"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="5" translatesAutoresizingMaskIntoConstraints="NO" image="Logo-Title.png" misplaced="YES">
+                                <rect key="frame" x="226" y="231" width="149" height="138"/>
+                                <constraints>
+                                    <constraint id="48" firstAttribute="width" constant="149"/>
+                                    <constraint id="49" firstAttribute="height" constant="138"/>
+                                    <constraint id="52" firstAttribute="width" secondItem="5" secondAttribute="height" constant="0.0" multiplier="149:138"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="0.0" id="59"/>
+                            <constraint firstItem="5" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="0.0" id="67"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Default-568h.png" width="640" height="1136"/>
+        <image name="Default-Landscape.png" width="1024" height="748"/>
+        <image name="Default-Portrait.png" width="768" height="1004"/>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="Icon-60.png" width="120" height="120"/>
+        <image name="Icon-72.png" width="72" height="72"/>
+        <image name="Icon-76.png" width="76" height="76"/>
+        <image name="Icon-Small-40.png" width="40" height="40"/>
+        <image name="Icon-Small-50.png" width="50" height="50"/>
+        <image name="Icon-Small.png" width="29" height="29"/>
+        <image name="Icon.png" width="57" height="57"/>
+        <image name="Logo-Title.png" width="353" height="327"/>
+    </resources>
+</document>

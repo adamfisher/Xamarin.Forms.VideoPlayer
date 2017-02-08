@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:me="clr-namespace:ChillPlayer.MarkupExtensions;assembly=ChillPlayer"
+             xmlns:o="clr-namespace:Octane.Xam.VideoPlayer;assembly=Octane.Xam.VideoPlayer"
+             x:Class="ChillPlayer.Pages.MainMenuPage"
+             Style="{StaticResource PageBaseStyle}">
+  
+  <RelativeLayout x:Name="MainMenuLayout">
+    
+    <o:VideoPlayer x:Name="VideoPlayer" Source="{me:VideoResource snow.mp4}"
+		  DisplayControls="False" AutoPlay="True" Repeat="True" Volume="0" FillMode="ResizeAspectFill"
+		  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+		  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" />
+
+    <BoxView BackgroundColor="#00C7A0" Opacity=".75"
+    	RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+    	RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+
+    <StackLayout
+    	HorizontalOptions="CenterAndExpand" Spacing="15"
+    	RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0}"
+		  RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0}"
+		  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+		  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+      <StackLayout.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+          <OnPlatform.iOS>20, 50, 20, 20</OnPlatform.iOS>
+          <OnPlatform.Android>20, 50, 20, 20</OnPlatform.Android>
+          <OnPlatform.WinPhone>20, 50, 20, 20</OnPlatform.WinPhone>
+        </OnPlatform>
+      </StackLayout.Padding>
+      <Label FontSize="40" FontAttributes="Bold" HorizontalOptions="Center">
+        <Label.FormattedText>
+          <FormattedString>
+            <Span Text="Main" ForegroundColor="White" />
+            <Span Text="Menu" />
+          </FormattedString>
+        </Label.FormattedText>
+      </Label>
+      <Button x:Name="FullPageButton" Text="Full Page Local Video" Style="{StaticResource MainMenuButtonStyle}" Clicked="FullScreenVideoPlayerPage_Clicked" />
+      <Button x:Name="YouTubeButton" Text="Top YouTube Videos" Style="{StaticResource MainMenuButtonStyle}" Clicked="TopYouTubeVideoButton_OnClick" />
+      <Button x:Name="VimeoButton" Text="Top Vimeo Videos" Style="{StaticResource MainMenuButtonStyle}" Clicked="TopVimeoVideoButton_OnClick" />
+    </StackLayout>
+    
+  </RelativeLayout>
+  
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChillPlayer.App">
+  <Application.Resources>
+    <ResourceDictionary>
+      <OnPlatform x:Key="DefaultFontFamily" x:TypeArguments="x:String" iOS="sans-serif" Android="sans-serif" WinPhone="sans-serif" />
+      <Color x:Key="ForegroundColor">Black</Color>
+      <Color x:Key="BackgroundColor">White</Color>
+
+      <!-- GLOBAL IMPLICIT STYLES -->
+      <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource ForegroundColor}" />
+        <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}" />
+      </Style>
+
+      <Style x:Key="ButtonStyle" TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource ForegroundColor}" />
+        <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}" />
+        <Setter Property="BorderWidth" Value="1" />
+      </Style>
+
+      <Style TargetType="Entry">
+        <Setter Property="TextColor" Value="{StaticResource ForegroundColor}" />
+      </Style>
+
+      <!-- GLOBAL EXPLICIT STYLES -->
+      <Style x:Key="PageBaseStyle" TargetType="Page">
+        <Setter Property="BackgroundColor" Value="{StaticResource BackgroundColor}" />
+      </Style>
+
+      <Style x:Key="MainMenuButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="TextColor" Value="Color.White"/>
+        <Setter Property="BorderColor" Value="Color.White" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+      </Style>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>
