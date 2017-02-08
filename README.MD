@@ -1,4 +1,15 @@
-Finally, a Xamarin Forms component that makes it extremely easy to **render the native video player on every mobile platform** and respond to common video events all from shared Xamarin Forms code. This component provides a highly customizable development experience with a solid foundation to develop rich and visually interesting cross-platform mobile video playback.
+# Xamarin Forms Video Player [![](https://raw.githubusercontent.com/pixel-cookers/built-with-badges/master/nuget/nuget-long.png)](http://www.nuget.org/packages/Octane.Xam.VideoPlayer)
+
+This is the official repository for the Xamarin Forms Video Player component. Microsoft plans to shutdown the Xamarin Component Store sometime this year so this will be the new resting place for issues and documentation.
+
+1. Take the **[trial version](http://www.nuget.org/packages/Octane.Xam.VideoPlayer)** for a spin.
+2. If you like it, you can **[buy it](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JJ4XFDBGNAFEY)** - unlocks the full capability of the component.
+3. Once you purchase it, **[follow the Getting Started guide](https://github.com/adamfisher/Xamarin.Forms.VideoPlayer/blob/master/GettingStarted.md)** to get your license key.
+
+
+## Introduction
+
+This Xamarin Forms component that makes it extremely easy to **render the native video player on every mobile platform** and respond to common video events all from shared Xamarin Forms code. This component provides a highly customizable development experience with a solid foundation to develop rich and visually interesting cross-platform mobile video playback.
 
 This video player does all the heavy lifting for you, allowing you to spend more time focused on making your mobile app great and less on the intricate details of managing network state, decoding and media playback.
 
