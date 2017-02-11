@@ -1,6 +1,6 @@
 # Xamarin Forms Video Player [![](https://raw.githubusercontent.com/pixel-cookers/built-with-badges/master/nuget/nuget-long.png)](http://www.nuget.org/packages/Octane.Xam.VideoPlayer)
 
-This is the official repository for the Xamarin Forms Video Player component. Microsoft plans to shutdown the Xamarin Component Store sometime this year so this will be the new resting place for issues and documentation.
+This is the official repository for the Xamarin Forms Video Player component.
 
 1. Take the **[trial version](http://www.nuget.org/packages/Octane.Xam.VideoPlayer)** for a spin.
 2. If you like it, you can **[buy it](https://components.xamarin.com/view/video-player)** - unlocks the full capability of the component.
