@@ -2,6 +2,7 @@
 
 <img src="http://i.imgur.com/CrqQVhP.png" />
 <br/>
+
 ## Installation
 
 ### 1. Get Your License Key
@@ -47,6 +48,7 @@ The snippet below shows the most basic example of using the video player. Be sur
 **When developing on Android**, you will need to use a real device to debug your application since the emulator is likely not powerful enough for video playback.
 
 <br/>
+
 ## VideoPlayer XAML Control
 
 Shown below are the complete set of options available with the VideoPlayer control and the possible values separated by the bar symbol. All properties of the player are documented extremely well in code comments if you need more information on a specific property. Due to the vastly different nature of video playback on each platform, the properties and events below are the common ones that all platforms share.
@@ -74,6 +76,7 @@ The `Source` property takes a `VideoSource` which behaves very similarly to the 
 ```
 
 <br/>
+
 ## Player Properties
 
 Common video player operations are described here.
@@ -91,6 +94,7 @@ Common video player operations are described here.
 | State         	  | A read-only bindable property indicating the current state of the video player (e.g. Idle, Prepared, Playing, etc.)                           |
 | IsLoading        	  | A read-only bindable property indicating the video is loading for playback.										                              |
 <br/>
+
 ## Playback Events
 
 This component gives you the ability to subscribe to a wide variety of events that typically occur during video playback with the event handlers below. The EventArgs that are passed to each event firing contain a wealth of information about the current state of the player (current time, total duration, volume level, etc.).
@@ -105,6 +109,7 @@ This component gives you the ability to subscribe to a wide variety of events th
 | PlayerStateChanged 	| Event notification fires when the video player's internal state machine changes state.                                    	|
 
 <br/>
+
 ## Commands 
 
 It's also possible to bind other Xamarin Forms controls such as buttons to common video player operations noted below. This could be useful in situations where you want to create your own cross-platform buttons for these operations and perhaps set `DisplayControls="False"` on the video player.
@@ -116,6 +121,7 @@ It's also possible to bind other Xamarin Forms controls such as buttons to commo
 | SeekCommand  	| Seeks a specific number of seconds forward or backward in the playback stream. This command takes an integer command parameter equal to the number of seconds forward (positive number) or backward (negative number) to seek. |
 
 <br/>
+
 ## Compatible Video Playback Streams
 
 You will want to make sure the video files you play are compatible with the mobile platforms you are targeting. <a href="http://developer.android.com/guide/appendix/media-formats.html" target="_blank">Android</a>, <a href="https://developer.apple.com/library/ios/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/MediaLayer/MediaLayer.html" target="_blank">iOS</a>, and <a href="https://msdn.microsoft.com/en-us/library/windows/apps/Ff462087(v=VS.105).aspx" target="_blank">Windows Phone</a> all have documentation on the media formats and baseline encoding parameters they support.
@@ -128,6 +134,7 @@ This video player component requires **a valid URL to a video file with a file e
 Without some help, the native video players on mobile devices are unable to stream URLs directly from popular video hosting sites like YouTube and Vimeo. There is a little more work involved to get the correct URL for playback. **The XAML markup extensions for Vimeo and YouTube shown below are provided as a convenience in the Chill Player sample app and are not guaranteed to be as reliable as integrating the YouTube or Vimeo APIs into your application. They are provided as experimental functionality.**
 
 <br/>
+
 ## XAML Markup Extensions
 
 The demo app (Chill Player) comes with several useful extensions methods to make your XAML development more enjoyable.
@@ -143,6 +150,7 @@ The demo app (Chill Player) comes with several useful extensions methods to make
 `xmlns:me="clr-namespace:ChillPlayer.MarkupExtensions;assembly=ChillPlayer"`
 
 <br/>
+
 ## App Permissions
 
 Depending on what you are using the video player for, you may need to add some of the following permissions to your manifest files for each respective platform.
@@ -163,12 +171,14 @@ Depending on what you are using the video player for, you may need to add some o
 > | Android  | In AndroidManifest.xml:<br/>```<uses-permission android:name="android.permission.WAKE_LOCK" />``` |
 
 <br/>
+
 ## Useful Resources
 
 - <a href="http://videohive.net/?ref=octanesoftware" target="_blank">VideoHive</a>: 215,653 Royalty Free Video Files From $4
 - <a href="http://www.dreamstime.com/stock-video-footage#res11336177" target="_blank">Dreamstime</a>: Professional stock video
 
 <br/>
+
 ## Bug Queue
 
 If you have a feature request, enhancement, or need to report a bug with this component, please **<a href="https://bitbucket.org/OctaneSoftware/octane.xam.videoplayer/issues" target="_blank">open a new issue</a>** in the issue tracker.
