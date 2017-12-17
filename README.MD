@@ -54,6 +54,10 @@ This video player component is fully cross-platform between the iOS, Android, an
 
 You can download the free trial using the trial button above. **The trial is limited to 15 seconds of video playback.** Once you have acquired the full version, you will have complete access to all features of the video player.
 
+### Known Issues
+
+- [Android FillMode/Resolution](https://github.com/adamfisher/Xamarin.Forms.VideoPlayer/issues/3) - Some videos experience resolution stretching during playback and we are awaiting a btter solution from the Android platform or community.
+
 
 ### Licensing
 
