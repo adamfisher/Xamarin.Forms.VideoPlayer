@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Runtime.Serialization.Json;
 using System.Text;
-using Octane.Xam.VideoPlayer;
+using Octane.Xamarin.Forms.VideoPlayer;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

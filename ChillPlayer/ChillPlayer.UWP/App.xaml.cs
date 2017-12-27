@@ -3,7 +3,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Navigation;
-using Octane.Xam.VideoPlayer.UWP;
+using Octane.Xamarin.Forms.VideoPlayer.UWP;
 using Xamarin.Forms;
 using Application = Windows.UI.Xaml.Application;
 using Frame = Windows.UI.Xaml.Controls.Frame;

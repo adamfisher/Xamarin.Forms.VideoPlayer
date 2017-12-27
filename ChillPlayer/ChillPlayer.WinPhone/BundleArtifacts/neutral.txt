@@ -1,4 +1,0 @@
-MainPackage=D:\Projects\Octane.Xam.VideoPlayer\samples\ChillPlayer.WinPhone\bin\Debug\ChillPlayer.WinPhone_1.0.0.0_AnyCPU_Debug.appx
-SymbolPackage=D:\Projects\Octane.Xam.VideoPlayer\samples\ChillPlayer.WinPhone\AppPackages\ChillPlayer.WinPhone_1.0.0.0_Debug_Test\ChillPlayer.WinPhone_1.0.0.0_AnyCPU_Debug.appxsym
-ResourcePack=D:\Projects\Octane.Xam.VideoPlayer\samples\ChillPlayer.WinPhone\bin\Debug\ChillPlayer.WinPhone_1.0.0.0_scale-100.appx
-ResourcePack=D:\Projects\Octane.Xam.VideoPlayer\samples\ChillPlayer.WinPhone\bin\Debug\ChillPlayer.WinPhone_1.0.0.0_scale-140.appx

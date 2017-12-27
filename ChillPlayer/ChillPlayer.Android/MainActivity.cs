@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Octane.Xam.VideoPlayer.Android;
+using Octane.Xamarin.Forms.VideoPlayer.Android;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 

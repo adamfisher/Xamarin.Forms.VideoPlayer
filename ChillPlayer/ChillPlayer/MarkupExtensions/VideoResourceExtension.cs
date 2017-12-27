@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Octane.Xam.VideoPlayer;
+using Octane.Xamarin.Forms.VideoPlayer;
 
 namespace ChillPlayer.MarkupExtensions
 {

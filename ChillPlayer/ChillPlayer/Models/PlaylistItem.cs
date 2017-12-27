@@ -1,4 +1,4 @@
-﻿using Octane.Xam.VideoPlayer;
+﻿using Octane.Xamarin.Forms.VideoPlayer;
 using Xamarin.Forms;
 
 namespace ChillPlayer.Models

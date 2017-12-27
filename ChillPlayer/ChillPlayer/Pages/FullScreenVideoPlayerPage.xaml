@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:me="clr-namespace:ChillPlayer.MarkupExtensions;assembly=ChillPlayer"
-             xmlns:o="clr-namespace:Octane.Xam.VideoPlayer;assembly=Octane.Xam.VideoPlayer"
+             xmlns:o="clr-namespace:Octane.Xamarin.Forms.VideoPlayer;assembly=Octane.Xamarin.Forms.VideoPlayer"
              x:Class="ChillPlayer.Pages.FullScreenVideoPlayerPage">
   
   <o:VideoPlayer x:Name="videoPlayer" Source="{me:VideoResource video.mp4}" AutoPlay="True" />

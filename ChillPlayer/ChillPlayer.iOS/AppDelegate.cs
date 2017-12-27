@@ -1,5 +1,5 @@
 ﻿using Foundation;
-using Octane.Xam.VideoPlayer.iOS;
+using Octane.Xamarin.Forms.VideoPlayer.iOS;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
@@ -36,7 +36,7 @@ namespace ChillPlayer.iOS
 				}
 			};
 
-            FormsVideoPlayer.Init();
+            FormsVideoPlayer.Init("C9107D52F8CDFAB6C552D5CA415D9A926BCEE319");
             LoadApplication(new App());
             return base.FinishedLaunching(app, options);
         }

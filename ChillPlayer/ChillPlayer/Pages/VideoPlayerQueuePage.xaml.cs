@@ -1,8 +1,8 @@
 ﻿using ChillPlayer.MarkupExtensions;
 using ChillPlayer.Models;
 using System.Collections.Generic;
-using Octane.Xam.VideoPlayer.Constants;
-using Octane.Xam.VideoPlayer.Events;
+using Octane.Xamarin.Forms.VideoPlayer.Constants;
+using Octane.Xamarin.Forms.VideoPlayer.Events;
 using Xamarin.Forms;
 
 namespace ChillPlayer.Pages

@@ -1,7 +1,7 @@
 ﻿using ChillPlayer.Models;
-using Octane.Xam.VideoPlayer.Constants;
-using Octane.Xam.VideoPlayer.Licensing;
 using System;
+using Octane.Xamarin.Forms.VideoPlayer.Constants;
+using Octane.Xamarin.Forms.VideoPlayer.Licensing;
 using Xamarin.Forms;
 
 namespace ChillPlayer.Pages
@@ -16,7 +16,7 @@ namespace ChillPlayer.Pages
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
 
-            if (VideoPlayerLicense.LicenseType == LicenseType.Trial || Device.OS == TargetPlatform.Windows)
+            if (VideoPlayerLicense.LicenseType == LicenseType.Trial || Device.RuntimePlatform == Device.UWP || Device.RuntimePlatform == Device.WinPhone)
             {
                 //YouTubeButton.IsVisible = false;
                 //VimeoButton.IsVisible = false;
@@ -66,7 +66,7 @@ namespace ChillPlayer.Pages
 
             // We need to hide the main menu splash screen video when navigating to a new page
             // due to the way Xamarin Forms layers pages on Android.
-            if (Device.OS == TargetPlatform.Android)
+            if (Device.RuntimePlatform == Device.Android)
                 VideoPlayer.IsVisible = true;
         }
 
@@ -83,7 +83,7 @@ namespace ChillPlayer.Pages
 
             // We need to hide the main menu splash screen video when navigating to a new page
             // due to the way Xamarin Forms layers pages on Android.
-            if (Device.OS == TargetPlatform.Android)
+            if (Device.RuntimePlatform == Device.Android)
                 VideoPlayer.IsVisible = false;
         }
     }

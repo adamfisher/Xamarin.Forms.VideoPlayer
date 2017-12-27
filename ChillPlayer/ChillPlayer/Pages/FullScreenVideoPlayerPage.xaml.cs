@@ -28,7 +28,7 @@ namespace ChillPlayer.Pages
 
             // We need to hide the main menu splash screen video when navigating to a new page
             // due to the way Xamarin Forms layers pages on Android.
-            if (Device.OS == TargetPlatform.WinPhone)
+            if (Device.RuntimePlatform == Device.WinPhone)
                 videoPlayer.IsVisible = true;
         }
 
@@ -45,7 +45,7 @@ namespace ChillPlayer.Pages
 
             // We need to hide the main menu splash screen video when navigating to a new page
             // due to the way Xamarin Forms layers pages on Android.
-            if (Device.OS == TargetPlatform.WinPhone)
+            if (Device.RuntimePlatform == Device.WinPhone)
                 videoPlayer.IsVisible = false;
         }
     }
