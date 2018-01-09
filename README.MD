@@ -26,7 +26,7 @@ This is the simplest example of how to use the video player component that fills
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:o="clr-namespace:Octane.Xam.VideoPlayer;assembly=Octane.Xam.VideoPlayer"
+             xmlns:o="clr-namespace:Octane.Xamarin.Forms.VideoPlayer;assembly=Octane.Xamarin.Forms.VideoPlayer"
              x:Class="VideoPlayerSamples.VideoPlayerBasicExamplePage"
              Title="Basic Video Player">
 
@@ -67,4 +67,4 @@ Please make sure the platforms you're targeting meet the minimum requirements li
 |----------------	|--------------------	|
 | iOS      			| 8.0+ Unified        	|
 | Android  			| 4.1+ (API Level 16) 	|
-| Windows Phone  	| 8.0+ 	                |
+| UWP  	| 10 	                |
