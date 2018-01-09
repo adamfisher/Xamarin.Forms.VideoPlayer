@@ -24,7 +24,7 @@ This call should be made after the `Xamarin.Forms.Forms.Init()` method call. The
 - **Android** - `MainActivity.cs` file, in the OnCreate method.
 - **Windows Phone 8 (Silverlight)** - `App.xaml.cs` file, in the `protected override void OnLaunched(LaunchActivatedEventArgs e)` method.
 
-Once the component package has been added and the initialization method called inside each applcation, Octane.Xam.VideoPlayer APIs can be used in the common PCL or Shared Project code. 
+Once the component package has been added and the initialization method called inside each applcation, Octane.Xamarin.Forms.VideoPlayer APIs can be used in the common PCL or Shared Project code. 
 
 **Note:** You must still call the `init()` method with no parameter to use the player in trial mode.
 
@@ -36,7 +36,7 @@ The snippet below shows the most basic example of using the video player. Be sur
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:o="clr-namespace:Octane.Xam.VideoPlayer;assembly=Octane.Xam.VideoPlayer"
+             xmlns:o="clr-namespace:Octane.Xamarin.Forms.VideoPlayer;assembly=Octane.Xamarin.Forms.VideoPlayer"
              x:Class="VideoPlayerSamples.VideoPlayerBasicExamplePage"
              Title="Basic Video Player">
 
