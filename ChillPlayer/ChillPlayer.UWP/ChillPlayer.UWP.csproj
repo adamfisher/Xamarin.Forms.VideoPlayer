@@ -132,6 +132,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Octane.Xamarin.Forms.VideoPlayer.UWP\Octane.Xamarin.Forms.VideoPlayer.UWP.csproj">
+      <Project>{CC4C0E9A-2E10-4B80-834F-FAEF4BD38B70}</Project>
+      <Name>Octane.Xamarin.Forms.VideoPlayer.UWP</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ChillPlayer\ChillPlayer.csproj">
       <Project>{4222883e-b560-45a8-92bc-e6c311d5ae2c}</Project>
       <Name>ChillPlayer</Name>
