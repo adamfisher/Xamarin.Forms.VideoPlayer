@@ -29,3 +29,4 @@ obj/
 _ReSharper*/
 samples/Components/
 tests/Octane.Xam.VideoPlayer.WindowsStore.Tests/AppPackages/
+ChillPlayer/.vs/
