@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="e8ebdf4c-1a3c-4b54-919a-429e98e93142"
-    Publisher="CN=fishe"
+    Name="10ba12bb-80f8-454e-9e5c-b27a6c582c78"
+    Publisher="CN=021221cc-263a-4625-ad2e-e02ff97d185c"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="2b72f25b-ba21-4586-a94f-bbf2e86fbc36" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="ec0cc741-fd3e-485c-81be-68815c480690" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>ChillPlayer.UWP</DisplayName>
-    <PublisherDisplayName>fishe</PublisherDisplayName>
+    <PublisherDisplayName>021221cc-263a-4625-ad2e-e02ff97d185c</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

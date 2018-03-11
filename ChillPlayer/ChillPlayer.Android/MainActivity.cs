@@ -1,27 +1,25 @@
-﻿using Android.App;
-using Android.Content.PM;
-using Android.OS;
-using Octane.Xamarin.Forms.VideoPlayer.Android;
-using Xamarin.Forms;
-using Xamarin.Forms.Platform.Android;
+﻿using System;
 
-namespace ChillPlayer.Android
+using Android.App;
+using Android.Content.PM;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using Android.OS;
+
+namespace ChillPlayer.Droid
 {
-    [Activity(Label = "Chill Player", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : FormsApplicationActivity
+    [Activity(Label = "ChillPlayer", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
+            TabLayoutResource = Resource.Layout.Tabbar;
+            ToolbarResource = Resource.Layout.Toolbar;
+
             base.OnCreate(bundle);
-            Forms.Init(this, bundle);
-			FormsVideoPlayer.Init();
 
-            Forms.ViewInitialized += (sender, e) => {
-				if (!string.IsNullOrWhiteSpace(e.View.StyleId)) {
-					e.NativeView.ContentDescription = e.View.StyleId;
-				}
-			};
-
+            global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }
     }
