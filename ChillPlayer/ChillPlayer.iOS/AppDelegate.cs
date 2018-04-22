@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
+using Octane.Xamarin.Forms.VideoPlayer.iOS;
 using UIKit;
 
 namespace ChillPlayer.iOS
@@ -22,7 +19,8 @@ namespace ChillPlayer.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
+            Xamarin.Forms.Forms.Init();
+            FormsVideoPlayer.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
