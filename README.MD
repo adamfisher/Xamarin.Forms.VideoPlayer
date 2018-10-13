@@ -20,7 +20,7 @@ This video player does all the heavy lifting for you, allowing you to spend more
 
 ### A Video Player on Every Platform in 2 Minutes...
 
-This is the simplest example of how to use the video player component that fills an entire page. Just declare the `VideoPlayer` tag in your XAML Forms page and specify the location of the video file. For more advanced configuration, check out the [Getting Started](gettingstarted/video-player) page.
+This is the simplest example of how to use the video player component that fills an entire page. Just declare the `VideoPlayer` tag in your XAML Forms page and specify the location of the video file. For more advanced configuration, check out the [Getting Started](GettingStarted.md) page.
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
