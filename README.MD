@@ -1,6 +1,10 @@
 # Xamarin Forms Video Player [![](https://raw.githubusercontent.com/pixel-cookers/built-with-badges/master/nuget/nuget-long.png)](http://www.nuget.org/packages/Octane.Xam.VideoPlayer)
 
-***This library is now part of the open source community. Thank you to everyone who made this project possible! The issue queue will no longer be reviewed. If you wish to become a maintainer, please reach out to discuss.***
+🎉 🎉 🎉
+
+***This library is now part of the open source community. Thank you to everyone who made this project possible! The issue queue will no longer be reviewed. If you wish to become a maintainer, please reach out to discuss.*** 
+
+🎉 🎉 🎉
 
 This is the official repository for the Xamarin Forms Video Player component.
 
