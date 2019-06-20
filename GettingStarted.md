@@ -5,9 +5,9 @@
 
 ### 1. Initialization
 
-When adding a video player to a Xamarin.Forms application, **Octane.Xam.VideoPlayer** is a a separate component package that you should add to every project in the solution using the Component Store Manager (see [Walkthrough: Including a Component in Your Project](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/components_walkthrough)).
+When adding a video player to a Xamarin.Forms application, **Octane.Xam.VideoPlayer** is a a separate NuGet package that you should add to every project in the solution using the NuGet Package Manager (see [Walkthrough: Include a NuGet package in your project](https://docs.microsoft.com/en-us/visualstudio/mac/nuget-walkthrough?view=vsmac-2019)).
 
-After installing the component package, insert the following initialization code in each native application project:
+After installing the NuGet package, insert the following initialization code in each native application project:
 
 ```csharp
 FormsVideoPlayer.Init();
@@ -19,7 +19,7 @@ This call should be made after the `Xamarin.Forms.Forms.Init()` method call. The
 - **Android** - `MainActivity.cs` file, in the OnCreate method.
 - **Windows Phone 8 (Silverlight)** - `App.xaml.cs` file, in the `protected override void OnLaunched(LaunchActivatedEventArgs e)` method.
 
-Once the component package has been added and the initialization method called inside each applcation, Octane.Xamarin.Forms.VideoPlayer APIs can be used in the common PCL or Shared Project code. 
+Once the NuGet package has been added and the initialization method called inside each applcation, Octane.Xamarin.Forms.VideoPlayer APIs can be used in the common PCL or Shared Project code. 
 
 ### 3. Create a Video Player in XAML
 
