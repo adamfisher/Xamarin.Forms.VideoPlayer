@@ -3,19 +3,14 @@
 <img src="http://i.imgur.com/CrqQVhP.png" />
 <br/>
 
-## Installation
-
-### 1. Get Your License Key
-After purchasing the component, you will need to fill out a short form here to obtain your license key: **http://goo.gl/forms/nIqUXVz1Im**. You should receive a response the same business day.
-
-### 2. Initialization
+### 1. Initialization
 
 When adding a video player to a Xamarin.Forms application, **Octane.Xam.VideoPlayer** is a a separate component package that you should add to every project in the solution using the Component Store Manager (see [Walkthrough: Including a Component in Your Project](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/components_walkthrough)).
 
 After installing the component package, insert the following initialization code in each native application project:
 
 ```csharp
-FormsVideoPlayer.Init("LICENSE_KEY_HERE");
+FormsVideoPlayer.Init();
 ```
 
 This call should be made after the `Xamarin.Forms.Forms.Init()` method call. The Xamarin.Forms templates have this call in the following files for each platform:
@@ -25,8 +20,6 @@ This call should be made after the `Xamarin.Forms.Forms.Init()` method call. The
 - **Windows Phone 8 (Silverlight)** - `App.xaml.cs` file, in the `protected override void OnLaunched(LaunchActivatedEventArgs e)` method.
 
 Once the component package has been added and the initialization method called inside each applcation, Octane.Xamarin.Forms.VideoPlayer APIs can be used in the common PCL or Shared Project code. 
-
-**Note:** You must still call the `init()` method with no parameter to use the player in trial mode.
 
 ### 3. Create a Video Player in XAML
 
@@ -178,7 +171,3 @@ Depending on what you are using the video player for, you may need to add some o
 - <a href="http://www.dreamstime.com/stock-video-footage#res11336177" target="_blank">Dreamstime</a>: Professional stock video
 
 <br/>
-
-## Bug Queue
-
-If you have a feature request, enhancement, or need to report a bug with this component, please **<a href="https://bitbucket.org/OctaneSoftware/octane.xam.videoplayer/issues" target="_blank">open a new issue</a>** in the issue tracker.

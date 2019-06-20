@@ -1,14 +1,12 @@
 # Xamarin Forms Video Player [![](https://raw.githubusercontent.com/pixel-cookers/built-with-badges/master/nuget/nuget-long.png)](http://www.nuget.org/packages/Octane.Xam.VideoPlayer)
 
+***This library is now part of the open source community. Thank you to everyone who made this project possible! The issue queue will no longer be reviewed. If you wish to become a maintainer, please reach out to discuss.***
+
 This is the official repository for the Xamarin Forms Video Player component.
 
-1. Take the **[trial version](http://www.nuget.org/packages/Octane.Xam.VideoPlayer)** for a spin.
-2. If you like it, you can **[buy it](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55AMG5AW5ENEY)** - unlocks the full capability of the component.
+1. **[Install via NuGet](http://www.nuget.org/packages/Octane.Xam.VideoPlayer)**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[![PayPal](https://raw.githubusercontent.com/adamfisher/Xamarin.Forms.VideoPlayer/master/paypal_btn.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55AMG5AW5ENEY)
-
-3. Once you purchase it, **[follow the Getting Started guide](https://github.com/adamfisher/Xamarin.Forms.VideoPlayer/blob/master/GettingStarted.md)** to get your license key.
+2. Once you install it, **[Follow the Getting Started guide](https://github.com/adamfisher/Xamarin.Forms.VideoPlayer/blob/master/GettingStarted.md)**.
 
 ![s](https://github.com/adamfisher/Xamarin.Forms.VideoPlayer/blob/master/screenshots/screenshot1.png?raw=true)
 
@@ -20,7 +18,7 @@ This video player does all the heavy lifting for you, allowing you to spend more
 
 ### A Video Player on Every Platform in 2 Minutes...
 
-This is the simplest example of how to use the video player component that fills an entire page. Just declare the `VideoPlayer` tag in your XAML Forms page and specify the location of the video file. For more advanced configuration, check out the [Getting Started](gettingstarted/video-player) page.
+This is the simplest example of how to use the video player component that fills an entire page. Just declare the `VideoPlayer` tag in your XAML Forms page and specify the location of the video file. For more advanced configuration, check out the [Getting Started](GettingStarted.md) page.
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -49,15 +47,6 @@ This video player component is fully cross-platform between the iOS, Android, an
 - Simple configuration
 - Low overhead/footprint
 - Handles and releases resources for you
-
-### Free Trial Limitations
-
-You can download the free trial using the trial button above. **The trial is limited to 15 seconds of video playback.** Once you have acquired the full version, you will have complete access to all features of the video player.
-
-### Licensing
-
-Be sure to review the licensing link above. The license is valid for a single mobile application deployed across all three platforms (Android, iOS, Windows Phone). Each separate mobile app idea requires a new license as stated in the agreement. Check out the getting started link above to get your license key which is directly mapped to your mobile app.
-
 
 ### Platform Requirements
 
