@@ -4,6 +4,7 @@
   </style>
   <style name="Theme.Splash" parent="android:Theme">
     <item name="android:windowBackground">@drawable/splash</item>
-    <!--    <item name="android:windowNoTitle">true</item>-->
+    <item name="windowNoTitle">true</item>
+	<item name="windowActionBar">false</item>
   </style>
 </resources>
