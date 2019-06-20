@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>3.0.0</Version>
+    <Authors></Authors>
+    <Company>Octane Software, LLC</Company>
+    <Product>Xamarin.Forms Video Player</Product>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageId>Octane.Xam.VideoPlayer</PackageId>
+    <Copyright>Copyright © 2019</Copyright>
+    <PackageLicenseUrl>https://github.com/adamfisher/Xamarin.Forms.VideoPlayer/blob/master/License.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/adamfisher/Xamarin.Forms.VideoPlayer</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/adamfisher/Xamarin.Forms.VideoPlayer/raw/master/icons/VideoPlayer_128x128.png</PackageIconUrl>
+    <PackageTags>xamarin forms xamarin.forms ios android windows phone mobile video portable ui AVPlayer MediaPlayer AVPlayerViewController MediaElement pcl xam.pcl wp8 winphone UWP</PackageTags>
+    <Description>A Xamarin Forms control to render the native video player on every platform.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\netstandard1.4\Octane.Xamarin.Forms.VideoPlayer.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <None Remove="bin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.497661" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>
