@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Octane.Xam.VideoPlayer</id>
+    <version>3.1.0</version>
+    <authors>Octane.Xamarin.Forms.VideoPlayer</authors>
+    <owners>Octane.Xamarin.Forms.VideoPlayer</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/adamfisher/Xamarin.Forms.VideoPlayer</projectUrl>
+    <iconUrl>https://github.com/adamfisher/Xamarin.Forms.VideoPlayer/raw/master/icons/VideoPlayer_128x128.png</iconUrl>
+    <description>A Xamarin Forms control to render the native video player on every platform.</description>
+    <copyright>Copyright © 2019</copyright>
+    <tags>xamarin forms xamarin.forms ios android windows phone mobile video portable ui AVPlayer MediaPlayer AVPlayerViewController MediaElement pcl xam.pcl wp8 winphone UWP</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Xamarin.Forms" version="4.0.0.497661" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+	<files>
+		<!-- Cross-platform reference assemblies -->
+		<file src="Octane.Xamarin.Forms.VideoPlayer\bin\Release\netstandard2.0\Octane.Xamarin.Forms.VideoPlayer.dll" target="lib\netstandard2.0\Octane.Xamarin.Forms.VideoPlayer.dll" />
+		<file src="Octane.Xamarin.Forms.VideoPlayer\bin\Release\netstandard2.0\Octane.Xamarin.Forms.VideoPlayer.xml" target="lib\netstandard2.0\Octane.Xamarin.Forms.VideoPlayer.xml" />
+
+		<!-- iOS reference assemblies -->
+		<file src="Octane.Xamarin.Forms.VideoPlayer.iOS\bin\Release\Octane.Xamarin.Forms.VideoPlayer.dll" target="lib\Xamarin.iOS10\Octane.Xamarin.Forms.VideoPlayer.dll" />
+		<file src="Octane.Xamarin.Forms.VideoPlayer.iOS\bin\Release\Octane.Xamarin.Forms.VideoPlayer.xml" target="lib\Xamarin.iOS10\Octane.Xamarin.Forms.VideoPlayer.xml" />
+		<file src="Octane.Xamarin.Forms.VideoPlayer.iOS\bin\Release\Octane.Xamarin.Forms.VideoPlayer.iOS.dll" target="lib\Xamarin.iOS10\Octane.Xamarin.Forms.VideoPlayer.iOS.dll" />
+		<file src="Octane.Xamarin.Forms.VideoPlayer.iOS\bin\Release\Octane.Xamarin.Forms.VideoPlayer.iOS.xml" target="lib\Xamarin.iOS10\Octane.Xamarin.Forms.VideoPlayer.iOS.xml" />
+
+		<!-- Android reference assemblies -->
+		<file src="Octane.Xamarin.Forms.VideoPlayer.Android\bin\Release\Octane.Xamarin.Forms.VideoPlayer.dll" target="lib\MonoAndroid81\Octane.Xamarin.Forms.VideoPlayer.dll" />
+		<file src="Octane.Xamarin.Forms.VideoPlayer.Android\bin\Release\Octane.Xamarin.Forms.VideoPlayer.xml" target="lib\MonoAndroid81\Octane.Xamarin.Forms.VideoPlayer.xml" />
+		<file src="Octane.Xamarin.Forms.VideoPlayer.Android\bin\Release\Octane.Xamarin.Forms.VideoPlayer.Android.dll" target="lib\MonoAndroid81\Octane.Xamarin.Forms.VideoPlayer.Android.dll" />
+		<file src="Octane.Xamarin.Forms.VideoPlayer.Android\bin\Release\Octane.Xamarin.Forms.VideoPlayer.Android.xml" target="lib\MonoAndroid81\Octane.Xamarin.Forms.VideoPlayer.Android.xml" />
+
+		<!-- UWP reference assemblies -->
+		<file src="Octane.Xamarin.Forms.VideoPlayer.UWP\bin\x86\Release\Octane.Xamarin.Forms.VideoPlayer.dll" target="lib\uap10.0\Octane.Xamarin.Forms.VideoPlayer.dll" />
+		<file src="Octane.Xamarin.Forms.VideoPlayer.UWP\bin\x86\Release\Octane.Xamarin.Forms.VideoPlayer.xml" target="lib\uap10.0\Octane.Xamarin.Forms.VideoPlayer.xml" />
+		<file src="Octane.Xamarin.Forms.VideoPlayer.UWP\bin\x86\Release\Octane.Xamarin.Forms.VideoPlayer.UWP.dll" target="lib\uap10.0\Octane.Xamarin.Forms.VideoPlayer.UWP.dll" />
+		<file src="Octane.Xamarin.Forms.VideoPlayer.UWP\bin\x86\Release\Octane.Xamarin.Forms.VideoPlayer.UWP.xml" target="lib\uap10.0\Octane.Xamarin.Forms.VideoPlayer.UWP.xml" />
+	</files>
+</package>
